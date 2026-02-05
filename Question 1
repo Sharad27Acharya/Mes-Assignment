@@ -1,12 +1,13 @@
 ORG 0000H
-MOV A, #01H
-MOV B, #0AH
-MUL AB
-ADD A, #00H
-MOV B, #0AH
-MUL AB
-ADD A, #01H
-MOV B, #0AH
-MUL AB
-ADD A, #01H
-HERE: SJMP HERE
+    MOV A, #01H
+    MOV B, #0AH
+    MUL AB
+    ADD A, #00H
+    MOV B, #0AH
+    MUL AB
+    ADD A, #00H
+    MOV B, #0AH
+    MUL AB
+    ADD A, #07H
+HERE:
+    SJMP HERE
