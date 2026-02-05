@@ -1,8 +1,10 @@
 ORG 0000H
-CLR A
-ORL A, #20H
-ORL A, #05H
-MOV B, A
-CLR A
-ORL A, #20H
-ORL A, #04H
+    CLR A; 
+    ORL A, #10H ; 
+    ORL A, #08H ; 
+    MOV B, A ; 
+    CLR A ; 
+    ORL A, #80H ; 
+    ORL A, #64H; 
+HERE:
+    SJMP HERE
